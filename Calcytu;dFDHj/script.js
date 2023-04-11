@@ -7,23 +7,24 @@ const input2 = document.querySelector('.js-input2');
 const answer = document.querySelector('.js-result');
 
 
-let firstvalue = input1.value
-let secondvalue = input2.value
-
 const add = (number1, number2) => {
 return number1 + number2
 }
-const minus = (number1, number2) => {
+const minus1 = (number1, number2) => {
     return number1 - number2
 }
-const multiply = (number1, number2) =>  {
+const multiply1 = (number1, number2) =>  {
     return number1 * number2
 }
-const divide = (number1, number2) => {
+const divide1 = (number1, number2) => {
     return number1 / number2
 }
 
 
 plus.addEventListener('click', () => {
-    console.log(add(firstvalue,secondvalue))
+    answer.textContent =
+    add(parseInt(input1.value),parseInt(input2.value))
 })
+
+input1.value = ""
+input2.value = ""
