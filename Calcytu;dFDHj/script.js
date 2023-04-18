@@ -20,11 +20,30 @@ const divide1 = (number1, number2) => {
     return number1 / number2
 }
 
+const clear = () => {
+    input1.value = ""
+input2.value = ""
+}
 
 plus.addEventListener('click', () => {
     answer.textContent =
     add(parseInt(input1.value),parseInt(input2.value))
+    clear()
 })
 
-input1.value = ""
-input2.value = ""
+minus.addEventListener('click', () => {
+    answer.textContent = minus1(parseInt(input1.value),parseInt(input2.value))
+    clear()
+})
+
+multiply.addEventListener('click', () => {
+    answer.textContent = multiply1(parseInt(input1.value),parseInt(input2.value))
+    clear()
+})
+
+divide.addEventListener('click', () => {
+    answer.textContent = divide1(parseInt(input1.value),parseInt(input2.value))
+    clear()
+})
+
+
