@@ -45,5 +45,3 @@ divide.addEventListener('click', () => {
     answer.textContent = divide1(parseInt(input1.value),parseInt(input2.value))
     clear()
 })
-
-
